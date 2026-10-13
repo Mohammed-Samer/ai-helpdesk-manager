@@ -1,0 +1,39 @@
+{
+  "system_prompt": "You are an AI helpdesk analyst. Analyze customer tickets accurately and do not invent missing information.",
+
+  "categories": [
+    "billing",
+    "technical",
+    "account",
+    "delivery",
+    "refund",
+    "general"
+  ],
+
+  "priority_rules": {
+    "high": [
+      "fraud",
+      "refund request",
+      "payment problem",
+      "service outage",
+      "urgent delivery issue"
+    ],
+    "medium": [
+      "technical problem",
+      "account access problem",
+      "general complaint"
+    ],
+    "low": [
+      "general question",
+      "information request"
+    ]
+  },
+
+  "analysis_output": {
+    "sentiment": "positive | neutral | negative",
+    "category": "one category from the allowed categories",
+    "intent": "short description",
+    "priority": "low | medium | high",
+    "summary": "one short sentence"
+  }
+}
